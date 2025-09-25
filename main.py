@@ -14,10 +14,10 @@ def create_argument_parser() -> argparse.ArgumentParser:
 
     (year, week, _) = datetime.today().isocalendar()
 
-    parser.add_argument("-u", "--unit", default="Yrgo Lärdomsgatan", help="unit name")
+    parser.add_argument("-u", "--unit", default="Gnosjöandans kunskapscentrum GKC", help="unit name")
     # want to call it -h but that is a problem...
     parser.add_argument(
-        "-o", "--host", default="studiumyrgo.skola24.se", help="unit host"
+        "-o", "--host", default="gnosjo.skola24.se", help="unit host"
     )
     parser.add_argument(
         "-f", "--filename", default="calendar.ics", help="filename for calendar output"
