@@ -1,4 +1,8 @@
-# Schedule to calendar
+# Skola24 Export (GKC)
+
+> **Forked from**: Schedule to calendar(https://github.com/bjhara/schedule-to-calendar) by Hampus Ram (https://github.com/bjhara)
+>
+> **Original License**: MIT
 
 Get data from Skola24 and make it into a ical calendar file that can be imported into calendar software such as Outlook and Google Calendar.
 
@@ -20,7 +24,7 @@ schedule-to-calendar [-h] [-u UNIT] [-o HOST]
   -g GROUP, --group GROUP           class id
 ```
 
-The unit and host will default to values for Yrgo Lärdomsgatan. The filename will default to `calendar.ics`. The date related values
+The unit and host will default to values for Gnosjöandans kunskapscentrum. The filename will default to `calendar.ics`. The date related values
 will default to the current week.
 
 You will have to supply an id for either a teacher or a class. This
