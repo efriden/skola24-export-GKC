@@ -353,7 +353,7 @@ def _convert_to_event_for_teacher(
         if name == '':
             break
 
-        id = klass["guidId"] + str(datetime.today)
+        id = klass["guidId"] + str(datetime.today())
 
         day = int(klass["dayOfWeekNumber"])
 
