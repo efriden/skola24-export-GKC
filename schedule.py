@@ -350,7 +350,10 @@ def _convert_to_event_for_teacher(
         texts = klass["texts"]
         (name, group, room) = _get_texts(texts)
 
-        id = klass["guidId"]
+        if name == '':
+            break
+
+        id = klass["guidId"] + str(datetime.today)
 
         day = int(klass["dayOfWeekNumber"])
 
