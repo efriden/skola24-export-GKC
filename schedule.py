@@ -351,7 +351,7 @@ def _convert_to_event_for_teacher(
         (name, group, room) = _get_texts(texts)
 
         if name == '':
-            break
+            continue
 
         id = klass["guidId"] + str(datetime.today())
 
@@ -359,6 +359,7 @@ def _convert_to_event_for_teacher(
 
         time_start = _to_datetime(year, week, day, klass["timeStart"])
         time_end = _to_datetime(year, week, day, klass["timeEnd"])
+
 
         classes.append(
             TimetableEvent(id, name, group, teacher, room, time_start, time_end)
